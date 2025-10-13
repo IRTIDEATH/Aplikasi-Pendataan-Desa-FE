@@ -5,7 +5,7 @@
 Aplikasi ini dibangun untuk mendukung sistem informasi pengelolaan data desa. Aplikasi ini menyediakan endpoint untuk manajemen data warga, registrasi peristiwa kependudukan, dan administrasi desa lainnya.
 
 > [!NOTE]
-> Frontend untuk aplikasi Pendataan Desa dengan antarmuka user-friendly. Aplikasi ini dibuat sebagai project pembelajaran untuk memahami cara berkomunikasi dengan [Backend API](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Nuxt.js. Repositori ini nantinya akan dilengkapi dengan tutorial lengkap dalam bentuk markdown yang dapat membantu Anda mempelajari cara berkomunikasi dengan [Backend API](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Nuxt.js. Cocok untuk semua yang ingin belajar Frontend development.
+> Frontend untuk aplikasi Pendataan Desa dengan antarmuka user-friendly. Aplikasi ini dibuat sebagai project pembelajaran untuk memahami cara berkomunikasi dengan [Backend API Nest.js](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE). Repositori ini nantinya akan dilengkapi dengan tutorial lengkap dalam bentuk markdown yang dapat membantu Anda mempelajari cara berkomunikasi dengan [Backend API Nest.js](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Nuxt.js. Cocok untuk semua yang ingin belajar Frontend development.
 
 ## Fitur
 
@@ -23,11 +23,11 @@ Ikuti panduan langkah demi langkah di sini: [Pedoman Penggunaan Aplikasi]() -->
 
 ## Kontribusi
 
-Dengan senang hati, kami menyambut kontribusi dari siapa pun. Bantu kembangkan Aplikasi? silakan membaca [panduan kontribusi](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE/blob/main/CONTRIBUTING.md) untuk informasi lebih lanjut.
+Dengan senang hati, kami menyambut kontribusi dari siapa pun. Bantu kembangkan Aplikasi? silakan membaca [panduan kontribusi](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-FE/blob/main/CONTRIBUTING.md) untuk informasi lebih lanjut.
 
 ## Lisensi
 
-Aplikasi bersifat _open-source_ dan dilindungi Lisensi MIT. Silakan membaca _file_ [LICENSE](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE/blob/main/LICENSE)
+Aplikasi bersifat _open-source_ dan dilindungi Lisensi MIT. Silakan membaca _file_ [LICENSE](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-FE/blob/main/LICENSE)
 
 ### Daftar Pustaka
 
