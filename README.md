@@ -1,75 +1,37 @@
-# Nuxt Minimal Starter
+## Aplikasi Pendataan Desa Frontend
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<!-- ![Contoh Gambar](/contoh-gambar.png) -->
 
-## Setup
+Aplikasi ini dibangun untuk mendukung sistem informasi pengelolaan data desa. Aplikasi ini menyediakan endpoint untuk manajemen data warga, registrasi peristiwa kependudukan, dan administrasi desa lainnya.
 
-Make sure to install dependencies:
+> [!NOTE]
+> Frontend untuk aplikasi Pendataan Desa dengan antarmuka user-friendly. Aplikasi ini dibuat sebagai project pembelajaran untuk memahami cara berkomunikasi dengan [Backend API](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Nuxt.js. Repositori ini nantinya akan dilengkapi dengan tutorial lengkap dalam bentuk markdown yang dapat membantu Anda mempelajari cara berkomunikasi dengan [Backend API](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Nuxt.js. Cocok untuk semua yang ingin belajar Frontend development.
 
-```bash
-# npm
-npm install
+## Fitur
 
-# pnpm
-pnpm install
+- Sistem Autentikasi & Manajemen User: Sistem login dengan role-based access control
+- Manajemen Data Penduduk: CRUD data warga dengan informasi lengkap
+- Database Referensi
+- Sistem Registrasi/Pencatatan Peristiwa
+- Dashboard Analytics: Data statistik kependudukan
 
-# yarn
-yarn install
+Selain fitur-fitur di atas, Anda juga bisa menambahkan fitur lainnya, jika mempunyai saran dan ide yang ada di benak Anda.
 
-# bun
-bun install
-```
+<!-- ## Cara Penggunaan
 
-## Development Server
+Ikuti panduan langkah demi langkah di sini: [Pedoman Penggunaan Aplikasi]() -->
 
-Start the development server on `http://localhost:3000`:
+## Kontribusi
 
-```bash
-# npm
-npm run dev
+Dengan senang hati, kami menyambut kontribusi dari siapa pun. Bantu kembangkan Aplikasi? silakan membaca [panduan kontribusi](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE/blob/main/CONTRIBUTING.md) untuk informasi lebih lanjut.
 
-# pnpm
-pnpm dev
+## Lisensi
 
-# yarn
-yarn dev
+Aplikasi bersifat _open-source_ dan dilindungi Lisensi MIT. Silakan membaca _file_ [LICENSE](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE/blob/main/LICENSE)
 
-# bun
-bun run dev
-```
+### Daftar Pustaka
 
-## Production
+- Pembuat - [IRTIDEATH](https://irtideath.vercel.app/) dan para Kontributor keren.
+- Setup README dan Contributing markdown ini menggunakan Repositori: [sensasi-apps/sensasi-pos](https://github.com/sensasi-apps/sensasi-pos)
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Alur Kerja: [@sensasi-delight | Menata-Alur-Kerja](https://medium.com/@sensasi-delight/mulailah-menata-alur-kerja-di-github-d7af4f7968cf)
