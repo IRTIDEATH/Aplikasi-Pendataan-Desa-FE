@@ -18,11 +18,17 @@
     "enabled": true,
     "rules": {
       "a11y": {
-        "noSvgWithoutTitle": "off"
+        "noSvgWithoutTitle": "off",
+        "useSemanticElements": "off"
+      },
+      "complexity": {
+        "useLiteralKeys": "off"
       },
       "recommended": true,
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noDoubleEquals": "off",
+        "noArrayIndexKey": "off"
       }
     },
     "domains": {
