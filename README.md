@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Aplikasi Pendataan Desa Frontend
 
-## Getting Started
+<!-- ![Contoh Gambar](/contoh-gambar.png) -->
 
-First, run the development server:
+Aplikasi ini adalah antarmuka pengguna untuk Sistem Informasi Pengelolaan Data Desa. Aplikasi ini menyediakan halaman dan komponen interaktif untuk manajemen data warga, registrasi peristiwa kependudukan, dan administrasi desa lainnya.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> [!NOTE]
+> Frontend untuk aplikasi Pendataan Desa dengan antarmuka user-friendly. Aplikasi ini dibuat sebagai project pembelajaran untuk memahami cara berkomunikasi dengan [Backend API Nest.js](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE). Repositori ini nantinya akan dilengkapi dengan tutorial lengkap dalam bentuk markdown yang dapat membantu Anda mempelajari cara berkomunikasi dengan [Backend API Nest.js](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-BE) menggunakan Next.js. Cocok untuk semua yang ingin belajar Frontend development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Fitur
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Sistem Autentikasi & Manajemen User: Sistem login dengan role-based access control
+- Manajemen Data Penduduk: CRUD data warga dengan informasi lengkap
+- Database Referensi
+- Sistem Registrasi/Pencatatan Peristiwa
+- Dashboard Analytics: Data statistik kependudukan
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Selain fitur-fitur di atas, Anda juga bisa menambahkan fitur lainnya, jika mempunyai saran dan ide yang ada di benak Anda.
 
-## Learn More
+<!-- ## Cara Penggunaan
 
-To learn more about Next.js, take a look at the following resources:
+Ikuti panduan langkah demi langkah di sini: [Pedoman Penggunaan Aplikasi]() -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Kontribusi
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dengan senang hati, kami menyambut kontribusi dari siapa pun. Bantu kembangkan Aplikasi? silakan membaca [panduan kontribusi](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-FE/blob/main/CONTRIBUTING.md) untuk informasi lebih lanjut.
 
-## Deploy on Vercel
+## Lisensi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Aplikasi bersifat _open-source_ dan dilindungi Lisensi MIT. Silakan membaca _file_ [LICENSE](https://github.com/IRTIDEATH/Aplikasi-Pendataan-Desa-FE/blob/main/LICENSE)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Daftar Pustaka
+
+- Pembuat - [IRTIDEATH](https://irtideath.vercel.app/) dan para Kontributor keren.
+- Setup README dan Contributing markdown ini menggunakan Repositori: [sensasi-apps/sensasi-pos](https://github.com/sensasi-apps/sensasi-pos)
+
+- Alur Kerja: [@sensasi-delight | Menata-Alur-Kerja](https://medium.com/@sensasi-delight/mulailah-menata-alur-kerja-di-github-d7af4f7968cf)
