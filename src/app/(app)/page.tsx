@@ -16,6 +16,7 @@ export default function Home() {
 
           <Button
             size={"wrapper"}
+            variant={"layered"}
             className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
           >
             <span className="flex items-center gap-2 rounded-md bg-primary-layer px-4 py-1.5">

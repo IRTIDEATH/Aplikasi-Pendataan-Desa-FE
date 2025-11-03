@@ -37,6 +37,7 @@ const NavigationHeader = () => {
             <Button
               asChild
               size={"wrapper"}
+              variant={"layered"}
               className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
             >
               <Link href="/login">
