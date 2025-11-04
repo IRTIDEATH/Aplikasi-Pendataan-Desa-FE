@@ -1,7 +1,22 @@
+"use client";
+
+import { Menu, UserRound } from "lucide-react";
 import Link from "next/link";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Separator } from "@/components/ui/separator";
+import { authClient } from "@/lib/auth";
 
 const NavigationHeader = () => {
+  const { data } = authClient.useSession();
   return (
     <header>
       <div className="container px-4 py-5 md:px-8">
@@ -34,18 +49,44 @@ const NavigationHeader = () => {
           </Link>
 
           <div className="flex items-center">
-            <Button
-              asChild
-              size={"wrapper"}
-              variant={"layered"}
-              className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
-            >
-              <Link href="/login">
-                <span className="rounded-md bg-primary-layer px-4 py-1.5">
-                  Login
-                </span>
-              </Link>
-            </Button>
+            {data ? (
+              <div className="flex items-center gap-4 h-5">
+                <span className="text-nord-6">{data.user.name}</span>
+                <Separator orientation="vertical" />
+                <DropdownMenu>
+                  <DropdownMenuTrigger>
+                    <Avatar className="size-10">
+                      <AvatarFallback className="border-ring border-2 overflow-hidden">
+                        <UserRound className="text-nord-6 mt-2" size={36} />
+                      </AvatarFallback>
+                    </Avatar>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuLabel className="flex items-center justify-between">
+                      Menu
+                      <Menu size={16} />
+                    </DropdownMenuLabel>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem asChild>
+                      <Link href="/profile">Halaman Profil</Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
+            ) : (
+              <Button
+                asChild
+                size={"wrapper"}
+                variant={"layered"}
+                className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
+              >
+                <Link href="/login">
+                  <span className="rounded-md bg-primary-layer px-4 py-1.5">
+                    Login
+                  </span>
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>
