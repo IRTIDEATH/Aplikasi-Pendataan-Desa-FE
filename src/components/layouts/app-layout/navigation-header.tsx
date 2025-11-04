@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { authClient } from "@/lib/auth";
+import ProfileMenu from "./profile-menu";
 
 const NavigationHeader = () => {
+  const { data } = authClient.useSession();
   return (
     <header>
       <div className="container px-4 py-5 md:px-8">
@@ -34,17 +39,22 @@ const NavigationHeader = () => {
           </Link>
 
           <div className="flex items-center">
-            <Button
-              asChild
-              size={"wrapper"}
-              className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
-            >
-              <Link href="/login">
-                <span className="rounded-md bg-primary-layer px-4 py-1.5">
-                  Login
-                </span>
-              </Link>
-            </Button>
+            {data ? (
+              <ProfileMenu currentUser={data} />
+            ) : (
+              <Button
+                asChild
+                size={"wrapper"}
+                variant={"layered"}
+                className="rounded-lg bg-primary p-1 text-primary-foreground cursor-pointer hover:scale-110 will-change-transform duration-200 active:scale-100"
+              >
+                <Link href="/login">
+                  <span className="rounded-md bg-primary-layer px-4 py-1.5">
+                    Login
+                  </span>
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>

@@ -3,9 +3,9 @@
 
 :root {
   --background: oklch(0.1822 0 0);
-  --foreground: oklch(0.9288 0.0126 255.5078);
+  --foreground: oklch(0.9513 0.0074 260.73);
   --card: oklch(0.2046 0 0);
-  --card-foreground: oklch(0.9288 0.0126 255.5078);
+  --card-foreground: oklch(0.9513 0.0074 260.73);
   --popover: oklch(0.2603 0 0);
   --popover-foreground: oklch(0.7348 0 0);
   --primary: oklch(0.7683 0.0749 131.0631);
@@ -35,6 +35,11 @@
   --sidebar-accent-foreground: oklch(0.9851 0 0);
   --sidebar-border: oklch(0.2809 0 0);
   --sidebar-ring: oklch(0.8003 0.1821 151.711);
+  --nord-6: oklch(0.9513 0.0074 260.73);
+  --nord-5: oklch(0.933 0.0104 261.79);
+  --nord-4: oklch(0.8993 0.0164 262.75);
+  --nord-3: oklch(0.4523 0.0352 264.13);
+  --nord-2: oklch(0.4157 0.0324 264.13);
   --font-sans: Outfit, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: monospace;
@@ -64,9 +69,9 @@
 
 .dark {
   --background: oklch(0.1822 0 0);
-  --foreground: oklch(0.9288 0.0126 255.5078);
+  --foreground: oklch(0.9513 0.0074 260.73);
   --card: oklch(0.2046 0 0);
-  --card-foreground: oklch(0.9288 0.0126 255.5078);
+  --card-foreground: oklch(0.9513 0.0074 260.73);
   --popover: oklch(0.2603 0 0);
   --popover-foreground: oklch(0.7348 0 0);
   --primary: oklch(0.7683 0.0749 131.0631);
@@ -96,6 +101,11 @@
   --sidebar-accent-foreground: oklch(0.9851 0 0);
   --sidebar-border: oklch(0.2809 0 0);
   --sidebar-ring: oklch(0.8003 0.1821 151.711);
+  --nord-6: oklch(0.9513 0.0074 260.73);
+  --nord-5: oklch(0.933 0.0104 261.79);
+  --nord-4: oklch(0.8993 0.0164 262.75);
+  --nord-3: oklch(0.4523 0.0352 264.13);
+  --nord-2: oklch(0.4157 0.0324 264.13);
   --font-sans: Outfit, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: monospace;
@@ -155,6 +165,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --color-nord-6: var(--nord-6);
+  --color-nord-5: var(--nord-5);
+  --color-nord-4: var(--nord-4);
+  --color-nord-3: var(--nord-3);
+  --color-nord-2: var(--nord-2);
 
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
