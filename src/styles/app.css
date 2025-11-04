@@ -39,6 +39,7 @@
   --nord-5: oklch(0.933 0.0104 261.79);
   --nord-4: oklch(0.8993 0.0164 262.75);
   --nord-3: oklch(0.4523 0.0352 264.13);
+  --nord-2: oklch(0.4157 0.0324 264.13);
   --font-sans: Outfit, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: monospace;
@@ -104,6 +105,7 @@
   --nord-5: oklch(0.933 0.0104 261.79);
   --nord-4: oklch(0.8993 0.0164 262.75);
   --nord-3: oklch(0.4523 0.0352 264.13);
+  --nord-2: oklch(0.4157 0.0324 264.13);
   --font-sans: Outfit, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: monospace;
@@ -168,6 +170,7 @@
   --color-nord-5: var(--nord-5);
   --color-nord-4: var(--nord-4);
   --color-nord-3: var(--nord-3);
+  --color-nord-2: var(--nord-2);
 
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
