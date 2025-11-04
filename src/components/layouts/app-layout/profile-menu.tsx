@@ -1,7 +1,10 @@
 "use client";
 
-import { Menu, UserRound, UserRoundCog } from "lucide-react";
+import type { ErrorContext } from "better-auth/react";
+import { LogOut, Menu, UserRound, UserRoundCog } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -12,6 +15,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Separator } from "@/components/ui/separator";
+import { authClient } from "@/lib/auth";
 import type { CurrentUser } from "@/types/account";
 
 type Props = {
@@ -19,6 +23,28 @@ type Props = {
 };
 
 const ProfileMenu = ({ currentUser }: Props) => {
+  const router = useRouter();
+
+  async function handleSignOut() {
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/");
+          router.refresh();
+          toast.success("Sampai jumpa lagi!", {
+            description:
+              "Terima kasih sudah menggunakan aplikasi, jangan lupa balik lagi ya 😄",
+          });
+        },
+        onError: (ctx: ErrorContext) => {
+          toast.error("Oops!", {
+            description: "Pintu macet! Upaya logout gagal. Silakan coba lagi.",
+          });
+          console.log(ctx.error.message, "sesuatu yang salah terjadi");
+        },
+      },
+    });
+  }
   return (
     <div className="flex items-center gap-4 h-5">
       <span className="text-nord-6">{currentUser.user.name}</span>
@@ -42,6 +68,11 @@ const ProfileMenu = ({ currentUser }: Props) => {
               <UserRoundCog size={16} />
               Halaman Profil
             </Link>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem onClick={handleSignOut}>
+            <LogOut size={16} />
+            <span>Logout</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

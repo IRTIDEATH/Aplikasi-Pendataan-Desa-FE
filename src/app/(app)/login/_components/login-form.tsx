@@ -5,6 +5,7 @@ import type { ErrorContext } from "better-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Controller, useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -38,19 +39,16 @@ export function LoginForm() {
         callbackURL: "/",
       },
       {
-        // onRequest: () => {
-
-        // },
         onSuccess: () => {
-          // toast.success("Berhasil masuk", {
-          //   description: "Anda akan dipindahkan ke halaman dashboard",
-          // });
+          toast.success("Berhasil masuk", {
+            description: "Anda akan dipindahkan ke halaman Onboarding",
+          });
         },
         onError: (ctx: ErrorContext) => {
           console.log(ctx);
-          // toast("Ada yang salah", {
-          //   description: ctx.error.message ?? "Ada sesuatu yang salah",
-          // });
+          toast("Ada yang salah", {
+            description: ctx.error.message ?? "Ada sesuatu yang salah",
+          });
         },
       },
     );
