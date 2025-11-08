@@ -21,6 +21,9 @@
         "noSvgWithoutTitle": "off",
         "useSemanticElements": "off"
       },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
       "complexity": {
         "useLiteralKeys": "off"
       },
